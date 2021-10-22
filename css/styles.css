@@ -132,3 +132,8 @@ p {
 }
 
 
+/* Checkout */
+
+.custom-control-label {
+  text-align:left;
+}
