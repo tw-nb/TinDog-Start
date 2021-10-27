@@ -39,7 +39,7 @@ p {
 }
 
 .title-image {
-  width: 60%;
+  width: 40%;
 }
 
 /* Navigation Bar */
@@ -136,4 +136,13 @@ p {
 
 .custom-control-label {
   text-align:left;
+}
+
+
+/* Shop */
+
+#shop{
+  background-color: #625772;
+  color: #fff;
+  width: 15%;
 }
