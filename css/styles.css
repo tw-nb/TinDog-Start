@@ -146,3 +146,11 @@ p {
   color: #fff;
   width: 15%;
 }
+
+#items{
+  padding: 100px;
+}
+
+.pricing-column{
+  padding: 3% 2%;
+}
