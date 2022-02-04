@@ -5,42 +5,70 @@ body {
   text-align: center;
 }
 
-h1 {
+h1, h2, h3, h4, h5, h6{
+  font-family: 'Montserrat-Bold';
+}
+
+
+
+/* Headings and Misc Texts */
+
+.big-heading {
   font-family: 'Montserrat-black';
   font-size: 3rem;
   line-height: 1.5;
   font-weight: 900;
 }
 
-h2 {
-  font-family: 'Montserrat-Bold';
+.section-heading {
   font-size: 3rem;
   line-height: 1.5;
 }
 
-h3 {
-  font-family: 'Montserrat-Bold';
+.item-heading{
   font-size: 1.5rem;
 }
 
-p {
+.description-text{
   color: #8f8f8f;
 }
 
-/* Title */
+.impression {
+  background-color: 
+}
 
-#title {
+
+
+
+/* Sections */
+
+.color-section{
   background-color: #625772;
   color: #fff;
 }
 
-.container-fluid {
-  padding-bottom: 20px;
+.white-section{
+  background-color: white;
 }
 
-.title-image {
-  width: 40%;
+.container-fluid {
+  position: relative;
+  min-height: 100vh;
 }
+
+
+
+/* Title */
+
+#title {
+  padding-bottom: 100px;
+  text-align: left;
+  background-image: url("https://cdn-icons-png.flaticon.com/512/5070/5070271.png");
+  background-color: #cccccc;
+}
+
+
+
 
 /* Navigation Bar */
 
@@ -60,8 +88,11 @@ p {
 .nav-link {
   font-size: 1.2rem;
   font-family: 'Montserrat-light';
-
+  text-decoration-color: #8f8f8f;
 }
+
+
+
 
 /* Buttons */
 
@@ -93,43 +124,35 @@ p {
 }
 
 
+
+
  /* Features */
 
  #features {
    padding: 3rem 0;
-
+   position: relative;
+   z-index: 1;
  }
 
- .featured-item {
-   width: 70%;
- }
+ 
 
 
 /* slideshow */
 
 #slideshow {
-  background-color: #625772;
   padding: 7% 15%;
-  text-align: center;
-  color: #fff;
 }
 
 .carousel-item {
-  height: 500px;
+  height: 1000px;
 }
 
-/* Social media */
-
-#social-media{
-  background-color: #625772;
-  text-align: center;
-  padding-bottom: 3%;
+.slideshow-text {
+  font-size: 3rem;
+  line-height: 1.5;
 }
 
-.social-link {
-  font-size: 4rem;
-  padding: 0 20px;
-}
+
 
 
 /* Checkout */
@@ -137,6 +160,8 @@ p {
 .custom-control-label {
   text-align:left;
 }
+
+
 
 
 /* Shop */
@@ -154,3 +179,148 @@ p {
 .pricing-column{
   padding: 3% 2%;
 }
+
+.price-text {
+  font-size: 3rem;
+  line-height: 1.5;
+}
+
+
+
+
+/* About & Contact */
+#about-me {
+  padding: 100px 0;
+}
+
+#contact-me {
+  padding: 100px 0;
+}
+
+
+
+/* Shopping Cart */
+.Cart-Container{
+ width: 70%;
+ height: 85%;
+ background-color: #ffffff;
+ border-radius: 20px;
+ box-shadow: 0px 25px 40px #1687d933;
+}
+
+.Header{
+ margin: auto;
+ width: 90%;
+ height: 15%;
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+}
+.cart-heading{
+ font-size: 20px;
+ font-family: ‘Open Sans’;
+ font-weight: 700;
+ color: #2F3841;
+}
+.Action{
+ font-size: 14px;
+ font-family: ‘Open Sans’;
+ font-weight: 600;
+ color: #E44C4C;
+ cursor: pointer;
+ border-bottom: 1px solid #E44C4C;
+}
+
+.Cart-Items{
+ margin: auto;
+ width: 90%;
+ height: 30%;
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+}
+.image-box{
+ width: 15%;
+ text-align: center;
+}
+.about{
+ height: 100%;
+}
+.cart-title{
+ padding-top: 5px;
+ line-height: 10px;
+ font-size: 32px;
+ font-family: ‘Open Sans’;
+ font-weight: 800;
+ color: #202020;
+}
+.subtitle{
+ line-height: 10px;
+ font-size: 18px;
+ font-family: ‘Open Sans’;
+ font-weight: 600;
+ color: #909090;
+}
+
+
+/* Footer */
+
+#footer {
+  padding: 50px 50px;
+}
+
+.social-link {
+  font-size: 1rem;
+  padding: 0 20px;
+}
+
+
+
+
+/* Images */
+
+.title-image {
+  width: 40%;
+  transform: rotate(25deg);
+  position: absolute;
+  bottom: 5%;
+}
+
+.featured-item {
+   width: 70%;
+ }
+
+ .image {
+   width: 40%
+ }
+
+#slideshow-pics {
+  width: 40%
+}
+
+.featured-item {
+  height: 200px;
+  width: 200px;
+}
+
+
+
+
+
+/* Media Query */
+
+@media (max-width: 1050px) {
+  .title-image {
+    position: static;
+    transform: rotate(0);
+    padding-top: 10px;
+  }
+  #title {
+    text-align: center;
+  }
+  .featured-item {
+    height: 100px;
+  width: 100px;
+  }
+}
+
