@@ -7,7 +7,7 @@
 
   <!-- CSS Stylesheet -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="style.css">
 
   <!-- Font Awesome -->
   <script src="https://kit.fontawesome.com/59043f2336.js" crossorigin="anonymous"></script>
@@ -23,9 +23,8 @@
   </head>
 
 <body>
-  <section id="title">
+  <section class="color-section" id="title">
 
-    <div class="container-fluid">
 
 
       <!-- Title Nav Bar -->
@@ -53,7 +52,6 @@
        </div>
       </nav>
 
-     </div>
 </section>
 
 
@@ -62,36 +60,24 @@
       <!-- Shopping Nav Bar -->
 
 
-  <section id="shop">
 
-    <div class="container-fluid">
-
-      <nav class="nav flex-column">
-        <a class="nav-link" href="#">Cupcakes & Cakes</a>
-        <a class="nav-link" href="#">Cookies</a>
-        <a class="nav-link" href="#">Pies</a>
-      </nav>
-
-     </div>
-
-</section>
 
 <!--row-cols-1 row-cols-md-3 mb-3 text-center-->
-<section id="items">
+<section class="white-section" id="items">
 
-  <h2>All Items</h2>
+  <h2 class="price-text">All Items</h2>
 
   <div class="row">
 
       <div class="pricing-column col-lg-4 col-md-6">
         <div class="card mb-4 rounded-3 shadow-sm">
           <div class="card-header py-3">
-            <img class='title-image' src="images/filler.jpg" alt="">
+            <img class='image' src="https://cdn-icons-png.flaticon.com/512/2490/2490661.png" alt="">
           </div>
           <div class="card-body">
-            <h1 class="card-title pricing-card-title">Name</small></h1>
+            <h1 class="card-title pricing-card-title">Croissants</small></h1>
             <ul class="list-unstyled mt-3 mb-4">
-              <li>Description</li>
+              <li class="description-text">Description</li>
             </ul>
             <button type="button" class="w-100 btn btn-lg btn-outline-primary"><i class="fas fa-cart-plus"></i></button>
           </div>
@@ -101,12 +87,12 @@
       <div class="pricing-column col-lg-4 col-md-6">
         <div class="card mb-4 rounded-3 shadow-sm">
           <div class="card-header py-3">
-            <img class='title-image' src="images/filler.jpg" alt="">
+            <img class='image' src="https://cdn-icons-png.flaticon.com/512/214/214681.png" alt="">
           </div>
           <div class="card-body">
-            <h1 class="card-title pricing-card-title">Name</small></h1>
+            <h1 class="card-title pricing-card-title">Donuts</small></h1>
             <ul class="list-unstyled mt-3 mb-4">
-              <li>Description</li>
+              <li class="description-text">Description</li>
             </ul>
             <button type="button" class="w-100 btn btn-lg btn-primary"><i class="fas fa-cart-plus"></i></button>
           </div>
@@ -114,21 +100,34 @@
       </div>
 
       <div class="pricing-column col-lg-4 col-md-6">
-        <div class="card mb-4 rounded-3 shadow-sm border-primary">
-          <div class="card-header py-3 text-white bg-primary border-primary">
-            <img class='title-image' src="images/filler.jpg" alt="">
+        <div class="card mb-4 rounded-3 shadow-sm">
+          <div class="card-header py-3">
+            <img class='image' src="https://cdn-icons-png.flaticon.com/512/541/541732.png" alt="">
           </div>
           <div class="card-body">
-            <h1 class="card-title pricing-card-title">Name</small></h1>
+            <h1 class="card-title pricing-card-title">Cookies</small></h1>
             <ul class="list-unstyled mt-3 mb-4">
-              <li>Description</li>
+              <li class="description-text">Description</li>
             </ul>
             <button type="button" class="w-100 btn btn-lg btn-primary"><i class="fas fa-cart-plus"></i></button>
           </div>
         </div>
       </div>
 
-
+      <div class="pricing-column col-lg-4 col-md-6">
+        <div class="card mb-4 rounded-3 shadow-sm">
+          <div class="card-header py-3">
+            <img class='image' src="https://cdn-icons.flaticon.com/png/512/3608/premium/3608422.png?token=exp=1643767935~hmac=ba986e0880e7c02b697e138f443aa4f6" alt="">
+          </div>
+          <div class="card-body">
+            <h1 class="card-title pricing-card-title">Pies</small></h1>
+            <ul class="list-unstyled mt-3 mb-4">
+              <li class="description-text">Description</li>
+            </ul>
+            <button type="button" class="w-100 btn btn-lg btn-primary"><i class="fas fa-cart-plus"></i></button>
+          </div>
+        </div>
+      </div>
 
 
     </div>
@@ -137,16 +136,27 @@
 
    <!-- Footer -->
 
-  <footer id="footer">
+  <footer class="color-section" id="footer">
 
-    <footer class="my-5 pt-5 text-muted text-center text-small">
+
+
+    <div class="social-media">
+      <a class='social-link' href="#"><i class="fab fa-facebook-f"></i></a>
+      <a class='social-link' href="#"><i class="fab fa-instagram"></i></a>
+      <a class='social-link' href="#"><i class="fab fa-tiktok"></i></a>
+    </div>
+
+
+    
+    <footer class="text-muted text-center text-small">
         <p class="mb-1">© 2021 Whipped by Nae Nae</p>
         <ul class="list-inline">
           <li class="list-inline-item"><a href="#">Privacy</a></li>
           <li class="list-inline-item"><a href="#">Terms</a></li>
           <li class="list-inline-item"><a href="#">Support</a></li>
         </ul>
-      </footer>
+    </footer>
+
 
   </footer>
 
