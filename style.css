@@ -291,10 +291,6 @@ h1, h2, h3, h4, h5, h6{
   bottom: 5%;
 }
 
-.featured-item {
-   width: 70%;
- }
-
  .image {
    width: 40%
  }
@@ -306,6 +302,7 @@ h1, h2, h3, h4, h5, h6{
 .featured-item {
   height: 200px;
   width: 200px;
+  margin: 5% 5%;
 }
 
 
